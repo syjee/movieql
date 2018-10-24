@@ -1,0 +1,50 @@
+Arguments: 
+  /usr/bin/node /usr/local/bin/yarn add grapgql-yoga
+
+PATH: 
+  /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin
+
+Yarn version: 
+  1.10.1
+
+Node version: 
+  8.10.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: http://registry.yarnpkg.com/grapgql-yoga: Not found
+      at Request.params.callback [as _callback] (/usr/local/lib/node_modules/yarn/lib/cli.js:61073:18)
+      at Request.self.callback (/usr/local/lib/node_modules/yarn/lib/cli.js:120166:22)
+      at emitTwo (events.js:126:13)
+      at Request.emit (events.js:214:7)
+      at Request.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:121138:10)
+      at emitOne (events.js:116:13)
+      at Request.emit (events.js:211:7)
+      at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:121060:12)
+      at Object.onceWrapper (events.js:313:30)
+      at emitNone (events.js:111:20)
+
+npm manifest: 
+  {
+    "name": "movieql",
+    "version": "1.0.0",
+    "description": "Movie API with Graphql",
+    "main": "index.js",
+    "repository": "https://github.com/syjee/movieql",
+    "author": "syjee",
+    "license": "MIT",
+    "dependencies": {
+      "yarn": "^1.10.1"
+    },
+    "Script":{
+      "start":"nodemon"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
