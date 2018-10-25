@@ -1,4 +1,4 @@
-import { fetch } from "node-fetch";
+import fetch from "node-fetch";
 
 const API_URL = "https://yts.am/api/v2/list_movies.json?";
 
@@ -9,7 +9,7 @@ export const getMovies = (limit, rating) => {
     }
     if(rating > 0){
         console.log(rating);
-        REQUEST_URL += `&minimun_rating=${rating}`;
+        REQUEST_URL += `&minimum_rating=${rating}`;
     }
 
     return fetch(REQUEST_URL).then(res => res.json()).then(json => json.data.movies);
